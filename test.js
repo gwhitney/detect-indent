@@ -1,10 +1,8 @@
-import fs from 'node:fs';
-import path from 'node:path';
-import {fileURLToPath} from 'node:url';
-import test from 'ava';
-import detectIndent from './index.js';
+const fs = require('node:fs');
+const path = require('node:path');
+const test = require('ava');
+const detectIndent = require('./index.js');
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const getFile = file => fs.readFileSync(path.join(__dirname, file), 'utf8');
 
 test('detect the indent of a file with space indent', t => {

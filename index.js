@@ -1,3 +1,5 @@
+'use strict';
+
 // Detect either spaces or tabs but not both to properly handle tabs for indentation and spaces for alignment
 const INDENT_REGEX = /^(?:( )+|\t+)/;
 
@@ -127,7 +129,7 @@ function makeIndentString(type, amount) {
 	return indentCharacter.repeat(amount);
 }
 
-export default function detectIndent(string) {
+function detectIndent(string) {
 	if (typeof string !== 'string') {
 		throw new TypeError('Expected a string');
 	}
@@ -156,3 +158,5 @@ export default function detectIndent(string) {
 		indent,
 	};
 }
+
+module.exports = detectIndent;
