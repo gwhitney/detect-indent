@@ -1,9 +1,9 @@
 {
-	"name": "detect-indent",
+	"name": "@gwhitney/detect-indent",
 	"version": "7.0.1",
-	"description": "Detect the indentation of code",
+	"description": "Detect the indentation of code (commonjs fork)",
 	"license": "MIT",
-	"repository": "sindresorhus/detect-indent",
+	"repository": "gwhitney/detect-indent",
 	"author": {
 		"name": "Sindre Sorhus",
 		"email": "sindresorhus@gmail.com",

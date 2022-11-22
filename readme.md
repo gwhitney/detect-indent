@@ -1,6 +1,15 @@
 # detect-indent
 
-> Detect the indentation of code
+> Detect the indentation of code (commonjs fork)
+
+> **NOTE:** This is a fork of sindresorhus/detect-indent modified solely
+> to revert to providing CommonJS exports. It was created only to provide
+> an upgrade path for detect-indent in the `pnpm` Node package manager.
+> It is intended to be kept in sync with the upstream `detect-indent` and
+> use identical version numbers. The creator of this fork neither endorses
+> nor criticizes the convention decisions on the part of the maintainers/
+> authors of `pnpm` and `detect-indent` that led to the necessity of this
+> fork.
 
 Pass in a string of any kind of text and get the indentation.
 
